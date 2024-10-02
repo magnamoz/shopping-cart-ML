@@ -50,7 +50,7 @@
     "overrides": [
         // override "simple-import-sort" config
         {
-          "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+          "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "tests/**/*"],
           "rules": {
             "simple-import-sort/imports": [
               "error",
@@ -71,6 +71,9 @@
                 ]
               }
             ]
+          },
+          "env": {
+            "jest": true
           }
         }
     ]
